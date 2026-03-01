@@ -79,13 +79,6 @@
       {{- end }}
     </h2>
   </header>
-  {{- with .GetTerms "categories" }}
-  <div class="entry-categories">
-    {{- range . }}
-    <span class="entry-category">{{ .LinkTitle }}</span>
-    {{- end }}
-  </div>
-  {{- end }}
   {{- if (ne (.Param "hideSummary") true) }}
   <div class="entry-content">
     <p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
@@ -95,6 +88,13 @@
   <footer class="entry-footer">
     {{- partial "post_meta.html" . -}}
   </footer>
+  {{- end }}
+  {{- with .GetTerms "categories" }}
+  <div class="entry-categories">
+    {{- range . }}
+    <span class="entry-category">{{ .LinkTitle }}</span>
+    {{- end }}
+  </div>
   {{- end }}
   <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
 </article>
