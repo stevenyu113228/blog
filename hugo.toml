@@ -100,6 +100,22 @@ enableEmoji = true
     name = 'github'
     url = 'https://github.com/stevenyu113228'
 
+  [[params.socialIcons]]
+    name = 'facebook'
+    url = 'https://www.facebook.com/stevenyu113228/'
+
+  [[params.socialIcons]]
+    name = 'linkedin'
+    url = 'https://www.linkedin.com/in/chiao-lin-yu-195533170/'
+
+  [[params.socialIcons]]
+    name = 'telegram'
+    url = 'https://t.me/steven_meow'
+
+  [[params.socialIcons]]
+    name = 'x'
+    url = 'https://x.com/stevenyu113228'
+
 # Navigation menu
 [[menu.main]]
   identifier = 'categories'
