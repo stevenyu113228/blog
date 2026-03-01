@@ -4,7 +4,6 @@ defaultContentLanguage = 'zh-tw'
 title = "Steven Meow's Blog 🐱"
 theme = 'PaperMod'
 paginate = 10
-relativeURLs = true
 
 # Enable emoji support
 enableEmoji = true
