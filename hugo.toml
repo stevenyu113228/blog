@@ -5,6 +5,11 @@ title = "Steven Meow's Blog 🐱"
 theme = 'PaperMod'
 paginate = 10
 
+# Google Analytics
+[services]
+  [services.googleAnalytics]
+    id = 'G-SSLRPVD19L'
+
 # Enable emoji support
 enableEmoji = true
 
