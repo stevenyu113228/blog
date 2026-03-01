@@ -1,0 +1,119 @@
+/* === Nyan Cat GIF === */
+.nyan-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  margin: 1rem 0;
+}
+
+.nyan-gif {
+  max-width: 280px;
+  border-radius: 12px;
+  filter: drop-shadow(0 0 12px rgba(255, 119, 198, 0.4));
+  transition: transform 0.3s ease;
+}
+
+.nyan-gif:hover {
+  transform: scale(1.05) rotate(-2deg);
+}
+
+/* Paw prints */
+.paw {
+  font-size: 1.6rem;
+  animation: paw-bounce 1.5s ease-in-out infinite;
+  display: inline-block;
+}
+
+.paw:last-child {
+  animation-delay: 0.75s;
+}
+
+@keyframes paw-bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+/* Subtitle with cat kaomoji */
+.meow-subtitle {
+  text-align: center;
+  font-size: 1.1rem;
+  letter-spacing: 0.15em;
+  opacity: 0.7;
+  margin-top: 0.5rem;
+}
+
+/* === Cat cursor on homepage === */
+.home-info {
+  cursor: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'><text y='24' font-size='24'>🐱</text></svg>") 4 4, auto;
+}
+
+/* === Cat-themed scrollbar === */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--theme);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ff77c6;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ff99d6;
+}
+
+/* === Post list hover highlight === */
+.post-entry {
+  transition: border-color 0.3s ease;
+}
+
+.post-entry:hover {
+  border-color: #ff79c6;
+}
+
+/* === Category badges (list cards) === */
+.entry-categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  padding: 0 0.8rem;
+}
+
+.entry-category {
+  font-size: 0.75rem;
+  padding: 0.15em 0.6em;
+  border-radius: 4px;
+  background: rgba(255, 121, 198, 0.15);
+  color: #ff79c6;
+  pointer-events: none;
+}
+
+/* === Category badges (single post) === */
+.post-categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.post-category {
+  font-size: 0.8rem;
+  padding: 0.2em 0.7em;
+  border-radius: 4px;
+  background: rgba(255, 121, 198, 0.15);
+  color: #ff79c6;
+  text-decoration: none;
+}
+
+.post-category:hover {
+  background: rgba(255, 121, 198, 0.3);
+}
+
+/* === Soft glow on code blocks === */
+.highlight pre {
+  border-left: 3px solid #ff79c6;
+}

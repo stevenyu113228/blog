@@ -1,0 +1,122 @@
+baseURL = 'https://blog.stevenyu.tw/'
+languageCode = 'zh-TW'
+defaultContentLanguage = 'zh-tw'
+title = "Steven Meow's Blog 🐱"
+theme = 'PaperMod'
+paginate = 10
+relativeURLs = true
+
+# Enable emoji support
+enableEmoji = true
+
+# Build settings
+[build]
+  writeStats = true
+
+# URL structure matching WordPress
+[permalinks]
+  [permalinks.page]
+    posts = '/:year/:month/:day/:slug/'
+
+[taxonomies]
+  category = 'categories'
+  tag = 'tags'
+
+# Markup settings
+[markup]
+  [markup.highlight]
+    style = 'dracula'
+    lineNos = false
+    codeFences = true
+    guessSyntax = true
+    noClasses = true
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 4
+    ordered = false
+  [markup.goldmark.renderer]
+    unsafe = true
+
+# Sitemap
+[sitemap]
+  changeFreq = 'weekly'
+  priority = 0.5
+
+# Output formats
+[outputs]
+  home = ['HTML', 'RSS', 'JSON']
+
+# PaperMod theme parameters
+[params]
+  env = 'production'
+  description = 'Meow meow meow ???'
+  author = 'steven'
+  defaultTheme = 'dark'
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowWordCount = false
+  ShowRssButtonInSectionTermList = true
+  UseHugoToc = true
+  disableSpecial1stPost = false
+  disableScrollToTop = false
+  comments = false
+  hidemeta = false
+  hideSummary = false
+  showtoc = true
+  tocopen = false
+  DateFormat = '2006-01-02'
+
+  # Home page info mode
+  [params.homeInfoParams]
+    Title = "Steven Meow's Blog 🐱"
+    Content = """
+<div class="nyan-wrapper">
+  <span class="paw">🐾</span>
+  <img src="/images/nyancat.gif" alt="Nyan Cat" class="nyan-gif" />
+  <span class="paw">🐾</span>
+</div>
+<p class="meow-subtitle">~(=^‥^)ノ 喵喵喵 ∧,,,∧  (₌ↀ ω ↀ₌)  ฅ^•ﻌ•^ฅ</p>
+"""
+
+  # Search
+  [params.fuseOpts]
+    isCaseSensitive = false
+    shouldSort = true
+    location = 0
+    distance = 1000
+    threshold = 0.4
+    minMatchCharLength = 0
+    keys = ['title', 'permalink', 'summary', 'content']
+
+  # Social icons
+  [[params.socialIcons]]
+    name = 'github'
+    url = 'https://github.com/stevenyu113228'
+
+# Navigation menu
+[[menu.main]]
+  identifier = 'categories'
+  name = 'Categories'
+  url = '/categories/'
+  weight = 10
+
+[[menu.main]]
+  identifier = 'archives'
+  name = 'Archives'
+  url = '/archives/'
+  weight = 30
+
+[[menu.main]]
+  identifier = 'search'
+  name = 'Search'
+  url = '/search/'
+  weight = 40
+
+[[menu.main]]
+  identifier = 'about'
+  name = 'About'
+  url = '/about/'
+  weight = 50

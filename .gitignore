@@ -1,0 +1,22 @@
+# Hugo build output
+public/
+resources/_gen/
+hugo_stats.json
+.hugo_build.lock
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# WordPress migration files (not needed in repo)
+*.xml
+*.tar.gz
+*.json
+hugo-output/
+wp_all_posts.txt
+scripts/
+
+# Editor files
+*.swp
+*.swo
+*~
