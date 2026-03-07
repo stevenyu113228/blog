@@ -1,7 +1,7 @@
 ---
 title: "BabelChat 基於 AI 的 Discord 翻譯軟體"
 date: 2026-03-07T21:00:00+08:00
-draft: true
+draft: false
 url: "/2026/03/07/babelchat-discord-translator/"
 categories:
   - 小玩具
